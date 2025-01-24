@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  width: 100%;
+  height: 100vh;
+}
+
+.netflix{
+  color: rgb(172, 2, 2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-shadow: 2px 2px 4px black;
+  margin: 20px;
+  z-index: 10;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  max-width: 500px;
+  max-height: 600px;
+}
+
+.login,
+.register {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: auto;
+  height: auto;
+  max-width: 600px;
+  max-height: 600px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 40px rgba(170, 4, 4, 0.83);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #21212189;
+}
+.login h1,
+.register h1 {
+  text-align: center;
+}
+.login h4,
+.register h4 {
+  text-align: center;
+}
+
+.landing-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: #212121;
+  background-image: url("https://s3.amazonaws.com/prod-cdata-secure.sprinklr.com/DAM/3877/c403c07b-df03-4039-bee7-1a0dd7b449bd-227725003/what_is_netflix_5_en.png?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICTXXKBDaJbsP6UAeJ0W6UMWGExJCNhMqhONbUC0g%2BuAAiBJbax6zbFAvEqla1ApnYzLXSqwkl2gL5h7wYJ%2FcCxarSq6BQjY%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDg2OTM2NzQ3MTY3NCIMbtvZ5Ol8C59YRDiNKo4Fd8PkwiTx8lvnY%2FrJMa%2F9JS1zsxHXgjj4ek7wCJIW53n4NgAq2%2FZOawO4Kam2SWpoyd4%2Baavq83lZ7F56nUyTFn6VSI%2FcU7na7tmBTYLYX2rDNUSbSgtyQnsRe%2FII0I9Dp%2B3x1zNbI9soQi9LYzw6%2Bc0N7jl4hKWsN0yF%2F9Xl4BLNrqF8owr4LgyMiTlZ%2FyOtrPRsIKNgWUho2p%2F7cHz2DfuH%2BzU48Dt9hhlaoPdH0CIlzNDqWZ4T2JXRWa9BxLbTT%2FrF2PXYVIN5vmhn83hubBNtTDrBI5JzeKMMoaNh4NCSFmwnmG0A0W9nBbF2BI9rLwHOHZWevcjDrdFuHUKad3ggjcuLCq0t8FJE%2FH5CXcqvAgEbFiPrIaGED8%2FcnObFIsp5IlGtK1SrIZ8ZBwyCOWPIuwSMmmES%2BRmG40s%2BARn%2BdhNljpM9zrdhbn8AnRZQnEnxc9YBa9a3cpgg37LwFW2wWjoqAFjCcsan5s0DFqzY47qW0xVbjEPuRrh8cZgX1oo3fPZPJeyNG0wP2bXTo5r0GFxndk2VOCroLuJ%2F6koeLvo7uR8qOtM2sjA2nwCVtYNdjxJSyz%2BYy4c8H6PANj9OnZgQN5NUEYK1pNq1aWW6Fq3VkLrrVJGGxe2qGgrEVIv89v7rVrtoqbPWXTz%2FpiXhtPPtLSZJRXxukOpyNSooYTNU%2F6dSJDm23gpgh7g4%2FiV4hRaFqWHjAndoSy12WIcu8tq6tlCDNsdCnhnKUw0xlONPl9q63TGYqSbu01LcgamA3g4UQMt6KhZrpNQoKoQwUST7QPMdt3ZyNZrApzkYej9nc62XqiAzfTUCxDqKP8GLPJ15cKgbpToMUMV32ZK3aWfsHMeQetV6fUJnMJGYxLwGOrIBZJf80NJLmA9ovzEPKi3ywwMZTKRiqYxZfepfprmMWB1XN92XiNWjaa7c45h1%2BFr1tTg%2Fp0BIjzrVuFtgU9SqWUW8ko2AkLXvl7Xqnniw%2F2RGQg40WfXU8hC5tDJEvz1v5cKlzwAI%2B8Nrr8tNB%2BO9kqHlXxnYUyPhaZF7dFiKwhNJEE8hMNlIU34C5JCXwuYZPOelNRUKf%2FvhNPGJpPDfVfFnM38ss3xRuSbkvFa26eMxRA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250122T164327Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Credential=ASIA4U2SW3Y5OBXETK5Y%2F20250122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=621c9ca020bae699709830dd3819d31c99912b84c48aab7c2e2568dc5a0a900d");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn, .log-out {
+  background-color: rgb(194, 2, 2);
+  color: white;
+  padding: 0.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input {
+  padding: 0.75rem;
+  outline: none;
+  color: white;
+  background-color: #212121;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+input:hover {
+  transform: translateY(-2px);
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  position: fix;
+  bottom: 0;
+  background: linear-gradient(45deg, black 30%, #700101);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(221, 221, 221, 0.921);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+}
+
+.footer img, .movie-card img, .series-card img{
+  width: 270px;
+  height: 325px;
+}
+
+.cards{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100px;
+  max-width: 100px;
+  border: 1px solid grey;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.275);
+}
+
+.side{
+  padding: 0;
+  margin: 0;
+  max-width: 99px;
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side img{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.home{
+  width: 100%;
+  height: 10000px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: url("https://s3.amazonaws.com/prod-cdata-secure.sprinklr.com/DAM/3877/c403c07b-df03-4039-bee7-1a0dd7b449bd-227725003/what_is_netflix_5_en.png?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICTXXKBDaJbsP6UAeJ0W6UMWGExJCNhMqhONbUC0g%2BuAAiBJbax6zbFAvEqla1ApnYzLXSqwkl2gL5h7wYJ%2FcCxarSq6BQjY%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDg2OTM2NzQ3MTY3NCIMbtvZ5Ol8C59YRDiNKo4Fd8PkwiTx8lvnY%2FrJMa%2F9JS1zsxHXgjj4ek7wCJIW53n4NgAq2%2FZOawO4Kam2SWpoyd4%2Baavq83lZ7F56nUyTFn6VSI%2FcU7na7tmBTYLYX2rDNUSbSgtyQnsRe%2FII0I9Dp%2B3x1zNbI9soQi9LYzw6%2Bc0N7jl4hKWsN0yF%2F9Xl4BLNrqF8owr4LgyMiTlZ%2FyOtrPRsIKNgWUho2p%2F7cHz2DfuH%2BzU48Dt9hhlaoPdH0CIlzNDqWZ4T2JXRWa9BxLbTT%2FrF2PXYVIN5vmhn83hubBNtTDrBI5JzeKMMoaNh4NCSFmwnmG0A0W9nBbF2BI9rLwHOHZWevcjDrdFuHUKad3ggjcuLCq0t8FJE%2FH5CXcqvAgEbFiPrIaGED8%2FcnObFIsp5IlGtK1SrIZ8ZBwyCOWPIuwSMmmES%2BRmG40s%2BARn%2BdhNljpM9zrdhbn8AnRZQnEnxc9YBa9a3cpgg37LwFW2wWjoqAFjCcsan5s0DFqzY47qW0xVbjEPuRrh8cZgX1oo3fPZPJeyNG0wP2bXTo5r0GFxndk2VOCroLuJ%2F6koeLvo7uR8qOtM2sjA2nwCVtYNdjxJSyz%2BYy4c8H6PANj9OnZgQN5NUEYK1pNq1aWW6Fq3VkLrrVJGGxe2qGgrEVIv89v7rVrtoqbPWXTz%2FpiXhtPPtLSZJRXxukOpyNSooYTNU%2F6dSJDm23gpgh7g4%2FiV4hRaFqWHjAndoSy12WIcu8tq6tlCDNsdCnhnKUw0xlONPl9q63TGYqSbu01LcgamA3g4UQMt6KhZrpNQoKoQwUST7QPMdt3ZyNZrApzkYej9nc62XqiAzfTUCxDqKP8GLPJ15cKgbpToMUMV32ZK3aWfsHMeQetV6fUJnMJGYxLwGOrIBZJf80NJLmA9ovzEPKi3ywwMZTKRiqYxZfepfprmMWB1XN92XiNWjaa7c45h1%2BFr1tTg%2Fp0BIjzrVuFtgU9SqWUW8ko2AkLXvl7Xqnniw%2F2RGQg40WfXU8hC5tDJEvz1v5cKlzwAI%2B8Nrr8tNB%2BO9kqHlXxnYUyPhaZF7dFiKwhNJEE8hMNlIU34C5JCXwuYZPOelNRUKf%2FvhNPGJpPDfVfFnM38ss3xRuSbkvFa26eMxRA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250122T164327Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Credential=ASIA4U2SW3Y5OBXETK5Y%2F20250122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=621c9ca020bae699709830dd3819d31c99912b84c48aab7c2e2568dc5a0a900d");
+  /* background-size: cover; */
+  background-repeat: repeat;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+}
+
+.movies, .series{
+    padding: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(205, 205, 205);
+    background-color: rgba(98, 98, 98, 0.486);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.movies:hover, .series:hover{
+  background-color: rgba(98, 98, 98, 0.717);
+}
+
+.profile{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url('../images/account.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.user{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  position: relative;
+  left: 35px;
+  z-index: 100;
+  background-color: #21212198;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.usericon{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-image: url('../images/account.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.username{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.watch{
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.787);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.go-home{
+  font-size: 2rem;
+  display: none;
+  top: 0;
+  left: 0;
+  background-image: url('../images/home.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.watch-home{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+}
