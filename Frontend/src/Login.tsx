@@ -25,7 +25,7 @@ function Login() {
     try{
     let response = await axios.post('http://localhost:5000/api/login/', {email, password});
     //console.log(response.status, response.statusText, response.data);
-    let time = Date.now() + 1000*60*2;
+    let time = Date.now() + 1000*60*5;
     let session_obj = {jwt_token: response.data.token, expiry: time};
     //console.log(session_obj);
     //console.log(response);
