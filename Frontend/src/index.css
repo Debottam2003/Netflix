@@ -6,7 +6,7 @@ body {
   height: 100vh;
 }
 
-.netflix{
+.netflix {
   color: rgb(172, 2, 2);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
@@ -46,6 +46,8 @@ form {
   flex-direction: column;
   justify-content: space-evenly;
   background-color: #21212189;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .login h1,
 .register h1 {
@@ -72,7 +74,8 @@ form {
   align-items: center;
 }
 
-.btn, .log-out {
+.btn,
+.log-out {
   background-color: rgb(194, 2, 2);
   color: white;
   padding: 0.6rem;
@@ -92,8 +95,12 @@ input {
   border: 1px solid grey;
 }
 
-input:hover {
-  transform: translateY(-2px);
+input[type="email"],
+input[type="text"]{
+  width: 162px;
+}
+input[type="password"]{
+  width: 162px;
 }
 
 .footer {
@@ -111,12 +118,14 @@ input:hover {
   padding: 0;
 }
 
-.footer img, .movie-card img, .series-card img{
+.footer img,
+.movie-card img,
+.series-card img {
   width: 270px;
   height: 325px;
 }
 
-.cards{
+.cards {
   margin-top: 20px;
   width: 100%;
   display: flex;
@@ -125,7 +134,7 @@ input:hover {
   align-items: center;
 }
 
-.sidebar{
+.sidebar {
   position: fixed;
   left: 0;
   top: 0;
@@ -142,7 +151,7 @@ input:hover {
   background-color: rgba(128, 128, 128, 0.275);
 }
 
-.side{
+.side {
   padding: 0;
   margin: 0;
   max-width: 99px;
@@ -153,13 +162,13 @@ input:hover {
   align-items: center;
 }
 
-.side img{
+.side img {
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
 
-.home{
+.home {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -173,31 +182,33 @@ input:hover {
   margin: 0;
 }
 
-.movies, .series{
-    padding: 0.75rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(205, 205, 205);
-    background-color: rgba(98, 98, 98, 0.486);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.movies,
+.series {
+  padding: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(205, 205, 205);
+  background-color: rgba(98, 98, 98, 0.486);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.movies:hover, .series:hover{
+.movies:hover,
+.series:hover {
   background-color: rgba(98, 98, 98, 0.717);
 }
 
-.profile{
+.profile {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-image: url('../images/account.png');
+  background-image: url("../images/account.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.user{
+.user {
   width: 300px;
   height: 300px;
   display: flex;
@@ -213,23 +224,23 @@ input:hover {
   border-radius: 10px;
 }
 
-.usericon{
+.usericon {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  background-image: url('../images/account.png');
+  background-image: url("../images/account.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.username{
+.username {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
 }
 
-.watch{
+.watch {
   padding: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
@@ -240,18 +251,18 @@ input:hover {
   cursor: pointer;
 }
 
-.go-home{
+.go-home {
   font-size: 2rem;
   display: none;
   top: 0;
   left: 0;
-  background-image: url('../images/home.png');
+  background-image: url("../images/home.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.watch-home{
+.watch-home {
   display: flex;
   position: fixed;
   top: 0;
@@ -260,3 +271,36 @@ input:hover {
   width: 50px;
   height: 50px;
 }
+
+.hide {
+  border: none;
+  background-color: transparent;
+  width:18px;
+  height: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 20px;
+}
+
+.password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #212121;
+  box-sizing: border-box;
+}
+
+input[type="password"] {
+  border: none;
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.pass{
+  border: none;
+}
+
+

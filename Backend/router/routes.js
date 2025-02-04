@@ -4,6 +4,7 @@ const session = require('../controllers/session.js');
 const login = require('../controllers/login.js');
 const movie = require('../controllers/movie.js');
 /**
+ * @author Debottam Kar
  * @module routes
  * @description This module sets up the routes for the application.
  * @requires ../controllers/register
