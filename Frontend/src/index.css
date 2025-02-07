@@ -6,7 +6,7 @@ body {
   height: 100vh;
 }
 
-.netflix{
+.netflix {
   color: rgb(172, 2, 2);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
@@ -46,6 +46,8 @@ form {
   flex-direction: column;
   justify-content: space-evenly;
   background-color: #21212189;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .login h1,
 .register h1 {
@@ -62,7 +64,7 @@ form {
   height: 100vh;
   min-height: 100vh;
   background-color: #212121;
-  background-image: url("https://s3.amazonaws.com/prod-cdata-secure.sprinklr.com/DAM/3877/c403c07b-df03-4039-bee7-1a0dd7b449bd-227725003/what_is_netflix_5_en.png?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICGL%2BA6L9QJIl6Bo7bnySbztp0Z0JhSVSUs%2BItC%2BWU4VAiAzV2gDH%2BiswsYXuQjPnzDOUc9yOgUkHfIIpAKCdEwQKyq6BQjA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDg2OTM2NzQ3MTY3NCIMdmmyuwa%2BKWbJCVEvKo4FKuXgahTGcE%2BJz%2FvLI3%2B2Fx55GDEu4GZuURZajPhv8isLYQiR5tUv7HY%2FZxlyurGYBtVGka29hk9N2nufNY8qkXgunaBvL0xtGdTPidNx3g%2BqRRzcVQZEahBhj04hVMrV8WGG5gduuTl0QdAMQ4%2B8ERg0olGIgi1Afw93V9E5Q%2BBE2wu8TPsCEDA9ffoD3OUK6Jz6Wl6Nk3Gq0oxziUF0u10WuESvKFtMctVxfD5RddxSVwRybivx8jntfQo4vN%2FvbzI00mpyv9och9D2wJswpVd9iwnhYRivZDqASpPjaJkyxuulFQ12O%2FCZ8HzV8iSNmtFaQcB7%2FIPhR8cjt0gL8AGImv5dFAPnbphm%2BCDE7fd1oJG8SJdKa73PdnbvNypRzTb4Hx3Je50qZwbBvhgCs3L%2FT%2FaTvQJUX25goEku2KGgKN82oyT7eH32fbonXkKD9u5BAPjPEqbt3pWHIAM6B2u5adHv0nlRoP32lRe7D5DyNk%2FDhQ%2FOvgCOCsuHYremDjgbI28dAismlmWXUISAjjrnYcgDIPeoYtVIaDCO5asifygmUunszJHvf1E%2FXxf8jqHGMTw7%2F44v%2BAdpNbBTPRs5tiHCKItiOJk2zS4psEkhndyEUb1LdNgYi7K2UNMzK5ARwS94Bo38c8O3Ha3YJWsbCBKRMY%2Bgi4gJmQ33sh6UeTnhTNm5BZ0OhFJbS399lH%2FUz%2BCzyEniRNctxxbA3PrSYgsvvX%2BwTQgNpP7coVv8OV2IscxFJWt5uECQn0bdSKXhlIuC%2FKjWA8%2FSWXcPcIJSLW0acB%2BvwdFqd31fXx10Pit%2BLkeqQvZbFWEMhvpFGrGZ9jHBCpqJ%2FT1EpuSIBNcVbXQ1JUZYEqQ1PEpBMM3M87wGOrIB0y50LhH%2BuaISZBsI9%2B7wOW7dNlzQAPA3ezjX4jwIle1pEkKDslaTXOiWvzUZTRp9tJi4AcOw%2FIkZsZPYhwkvykLUFd%2BtB4uUJ3ovUE%2FzK%2FVNvyeWvgNMEiQVUBHZyeXuFSQFObFdHHkgK%2FT%2FADZiCu7wjJuCgKKiefKzNOveYjcg1VOEbaZlFa3KAAXGsFcYnc9lYLhRi2c1URJ6RA787WFkJjDR1qBnnprxT%2BcNVlTpQA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250131T153612Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Credential=ASIA4U2SW3Y5OO7LKCLG%2F20250131%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=143fbae62b111b2f6d18d40f5952d565ff8e2f6b1ce1aa08d863cbe870f9d8a9");
+  background-image: url("/images/netflix.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +74,8 @@ form {
   align-items: center;
 }
 
-.btn, .log-out {
+.btn,
+.log-out {
   background-color: rgb(194, 2, 2);
   color: white;
   padding: 0.6rem;
@@ -92,8 +95,12 @@ input {
   border: 1px solid grey;
 }
 
-input:hover {
-  transform: translateY(-2px);
+input[type="email"],
+input[type="text"]{
+  width: 162px;
+}
+input[type="password"]{
+  width: 162px;
 }
 
 .footer {
@@ -111,12 +118,14 @@ input:hover {
   padding: 0;
 }
 
-.footer img, .movie-card img, .series-card img{
+.footer img,
+.movie-card img,
+.series-card img {
   width: 270px;
   height: 325px;
 }
 
-.cards{
+.cards {
   margin-top: 20px;
   width: 100%;
   display: flex;
@@ -125,7 +134,7 @@ input:hover {
   align-items: center;
 }
 
-.sidebar{
+.sidebar {
   position: fixed;
   left: 0;
   top: 0;
@@ -142,7 +151,7 @@ input:hover {
   background-color: rgba(128, 128, 128, 0.275);
 }
 
-.side{
+.side {
   padding: 0;
   margin: 0;
   max-width: 99px;
@@ -153,19 +162,19 @@ input:hover {
   align-items: center;
 }
 
-.side img{
+.side img {
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
 
-.home{
+.home {
   width: 100%;
   height: 100vh;
   position: relative;
   box-sizing: border-box;
   overflow: auto;
-  background-image: url("https://s3.amazonaws.com/prod-cdata-secure.sprinklr.com/DAM/3877/c403c07b-df03-4039-bee7-1a0dd7b449bd-227725003/what_is_netflix_5_en.png?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICGL%2BA6L9QJIl6Bo7bnySbztp0Z0JhSVSUs%2BItC%2BWU4VAiAzV2gDH%2BiswsYXuQjPnzDOUc9yOgUkHfIIpAKCdEwQKyq6BQjA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDg2OTM2NzQ3MTY3NCIMdmmyuwa%2BKWbJCVEvKo4FKuXgahTGcE%2BJz%2FvLI3%2B2Fx55GDEu4GZuURZajPhv8isLYQiR5tUv7HY%2FZxlyurGYBtVGka29hk9N2nufNY8qkXgunaBvL0xtGdTPidNx3g%2BqRRzcVQZEahBhj04hVMrV8WGG5gduuTl0QdAMQ4%2B8ERg0olGIgi1Afw93V9E5Q%2BBE2wu8TPsCEDA9ffoD3OUK6Jz6Wl6Nk3Gq0oxziUF0u10WuESvKFtMctVxfD5RddxSVwRybivx8jntfQo4vN%2FvbzI00mpyv9och9D2wJswpVd9iwnhYRivZDqASpPjaJkyxuulFQ12O%2FCZ8HzV8iSNmtFaQcB7%2FIPhR8cjt0gL8AGImv5dFAPnbphm%2BCDE7fd1oJG8SJdKa73PdnbvNypRzTb4Hx3Je50qZwbBvhgCs3L%2FT%2FaTvQJUX25goEku2KGgKN82oyT7eH32fbonXkKD9u5BAPjPEqbt3pWHIAM6B2u5adHv0nlRoP32lRe7D5DyNk%2FDhQ%2FOvgCOCsuHYremDjgbI28dAismlmWXUISAjjrnYcgDIPeoYtVIaDCO5asifygmUunszJHvf1E%2FXxf8jqHGMTw7%2F44v%2BAdpNbBTPRs5tiHCKItiOJk2zS4psEkhndyEUb1LdNgYi7K2UNMzK5ARwS94Bo38c8O3Ha3YJWsbCBKRMY%2Bgi4gJmQ33sh6UeTnhTNm5BZ0OhFJbS399lH%2FUz%2BCzyEniRNctxxbA3PrSYgsvvX%2BwTQgNpP7coVv8OV2IscxFJWt5uECQn0bdSKXhlIuC%2FKjWA8%2FSWXcPcIJSLW0acB%2BvwdFqd31fXx10Pit%2BLkeqQvZbFWEMhvpFGrGZ9jHBCpqJ%2FT1EpuSIBNcVbXQ1JUZYEqQ1PEpBMM3M87wGOrIB0y50LhH%2BuaISZBsI9%2B7wOW7dNlzQAPA3ezjX4jwIle1pEkKDslaTXOiWvzUZTRp9tJi4AcOw%2FIkZsZPYhwkvykLUFd%2BtB4uUJ3ovUE%2FzK%2FVNvyeWvgNMEiQVUBHZyeXuFSQFObFdHHkgK%2FT%2FADZiCu7wjJuCgKKiefKzNOveYjcg1VOEbaZlFa3KAAXGsFcYnc9lYLhRi2c1URJ6RA787WFkJjDR1qBnnprxT%2BcNVlTpQA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250131T153612Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Credential=ASIA4U2SW3Y5OO7LKCLG%2F20250131%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=143fbae62b111b2f6d18d40f5952d565ff8e2f6b1ce1aa08d863cbe870f9d8a9");
+  background-image: url("/images/netflix.png");
   /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: center;
@@ -173,31 +182,33 @@ input:hover {
   margin: 0;
 }
 
-.movies, .series{
-    padding: 0.75rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(205, 205, 205);
-    background-color: rgba(98, 98, 98, 0.486);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.movies,
+.series {
+  padding: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(205, 205, 205);
+  background-color: rgba(98, 98, 98, 0.486);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.movies:hover, .series:hover{
+.movies:hover,
+.series:hover {
   background-color: rgba(98, 98, 98, 0.717);
 }
 
-.profile{
+.profile {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-image: url('../images/account.png');
+  background-image: url("/images/account.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.user{
+.user {
   width: 300px;
   height: 300px;
   display: flex;
@@ -213,23 +224,23 @@ input:hover {
   border-radius: 10px;
 }
 
-.usericon{
+.usericon {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  background-image: url('../images/account.png');
+  background-image: url("/images/account.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.username{
+.username {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
 }
 
-.watch{
+.watch {
   padding: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
@@ -240,18 +251,18 @@ input:hover {
   cursor: pointer;
 }
 
-.go-home{
+.go-home {
   font-size: 2rem;
   display: none;
   top: 0;
   left: 0;
-  background-image: url('../images/home.png');
+  background-image: url("/images/home.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.watch-home{
+.watch-home {
   display: flex;
   position: fixed;
   top: 0;
@@ -260,3 +271,36 @@ input:hover {
   width: 50px;
   height: 50px;
 }
+
+.hide {
+  border: none;
+  background-color: transparent;
+  width:18px;
+  height: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 20px;
+}
+
+.password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #212121;
+  box-sizing: border-box;
+}
+
+input[type="password"] {
+  border: none;
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.pass{
+  border: none;
+}
+
+
