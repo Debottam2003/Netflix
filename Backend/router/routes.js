@@ -9,7 +9,6 @@ const home = require('../controllers/home.js');
 const session = require('../controllers/session.js');
 const login = require('../controllers/login.js');
 const movie = require('../controllers/movie.js');
-
 const register = require('../controllers/register.js');
 const logout = require('../controllers/logout.js');
 

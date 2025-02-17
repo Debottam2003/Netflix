@@ -3,26 +3,23 @@ import MovieContent from "./MovieContent";
 import SeriesContent from "./SeriesContent";
 
 function Home() {
-
   let [contenttype, setContentType] = useState("Movies");
-  function movie_content(){
+  function movie_content() {
     console.log("button clicked");
-      if(contenttype === "Series"){
-        setContentType("Movies");
-      }
-      else if(contenttype === "Movies"){
-        return;
-      }
-  }
-  function series_content(){
-    console.log("button clicked");
-    if(contenttype === "Movies"){
-      setContentType("Series");
-    }
-    else if(contenttype === "Series"){
+    if (contenttype === "Series") {
+      setContentType("Movies");
+    } else if (contenttype === "Movies") {
       return;
     }
-}
+  }
+  function series_content() {
+    console.log("button clicked");
+    if (contenttype === "Movies") {
+      setContentType("Series");
+    } else if (contenttype === "Series") {
+      return;
+    }
+  }
   return (
     <div className="home">
       <div
@@ -37,10 +34,14 @@ function Home() {
           gap: "15px",
         }}
       >
-        <h1>N Series</h1>
+        <h1>Netflix</h1>
         <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-          <button className="movies" onClick={movie_content}>Movies</button>
-          <button className="series" onClick={series_content}>Series</button>
+          <button className="movies" onClick={movie_content}>
+            Movies
+          </button>
+          <button className="series" onClick={series_content}>
+            Series
+          </button>
         </div>
       </div>
       <div

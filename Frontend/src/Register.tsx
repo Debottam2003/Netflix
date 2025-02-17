@@ -89,7 +89,7 @@ function Register() {
         </button>
       </form>
       {error !== "" && <h4 style={{ color: "red" }}>{error}</h4>}
-      <Link to="/" style={{ textDecoration: "none", color: "blue" }}>
+      <Link to="/Netflix" style={{ textDecoration: "none", color: "blue" }}>
         <h4>Sign In</h4>
       </Link>
     </div>
