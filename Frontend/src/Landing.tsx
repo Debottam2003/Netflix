@@ -20,7 +20,7 @@ function Landing() {
           setTimeout(() => {
             setNetflix((prevData) => prevData + text[s]);
             resolve("success");
-          }, 100);
+          }, 150);
         });
       }
     }
