@@ -75,7 +75,7 @@ function Login() {
         </button>
       </form>
       {error !== "" && <h4 style={{ color: "red" }}>{error}</h4>}
-      <Link to="/Netflix/register" style={{ textDecoration: "none", color: "blue" }}>
+      <Link to="/Netflix/register" style={{ textDecoration: "none", color: "aliceblue" }}>
         <h4>Sign Up Now</h4>
       </Link>
     </div>
