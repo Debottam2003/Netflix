@@ -10,7 +10,7 @@ function Login() {
   interface bg{
     backgroundImage: string
   };
-  let { eye, pass, toggle }: { eye: bg, pass: string; toggle: () => void } = custom();
+  let { eye, pass, toggle }: { eye: bg, pass: string, toggle: () => void } = custom();
   function password_toggle(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
     toggle();
