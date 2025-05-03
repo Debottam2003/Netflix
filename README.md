@@ -1,3 +1,11 @@
 <h1>This is fullstack Netflix clone Project using PERN stack</h1>
+
+# Frontend: React
+# Backend: Node js + Express js
+# DatBase: Postgresql
+
+Frontend connects with the backend through multiple api endpoints.
+API based backend with production grade Practices.
+
 <img src="https://github.com/user-attachments/assets/2e6a8956-d050-46a9-9dd3-5c41d6a58380" />
 <img src="https://private-user-images.githubusercontent.com/179864845/440144013-67218ba2-a22c-4105-93f6-9f0ce3c9f5b0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDYzMDM2ODIsIm5iZiI6MTc0NjMwMzM4MiwicGF0aCI6Ii8xNzk4NjQ4NDUvNDQwMTQ0MDEzLTY3MjE4YmEyLWEyMmMtNDEwNS05M2Y2LTlmMGNlM2M5ZjViMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUwM1QyMDE2MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMTE5N2VkMmYzZTlmOTE4ZWE3NTc1NjZmZWQyZGU5NzYyY2MwMzI2Mzc3YjM1YzkyYjBhN2JlY2YzMDg1ZWE4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.apGWOBPMbl2Ycfq7_wNslI_isvVfDdKHRUx1nJ6WLiI" />
